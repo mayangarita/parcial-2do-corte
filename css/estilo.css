@@ -1,0 +1,292 @@
+/* Patrones Globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía Única: Quicksand */
+h1, h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family: 'Antonio', sans-serif; }
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+
+/* Estilo Propio */
+
+/* Menú Hamburguesa */
+aside#menu-moviles { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; top: 0; left: -290px; z-index: 99998; background: #474747e8; }
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 20px; right: -35px; z-index: 1; color: #7D7D7D; font-size: 1.25em; line-height: 1em; text-align: center; padding: 7.5px 0; transition: all 0.3s ease-in; }
+aside#menu-moviles a#abrir-menu:hover { color: #FDBA9F; transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 20px; right: -35px; z-index: 2; color: #7D7D7D; font-size: 1.25em; line-height: 1em; text-align: center; padding: 7.5px 0; transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { color: #FDBA9F; transition: all 0.3s ease-in; }
+aside#menu-moviles nav { width: 58%; height: auto; display: block; margin: 25px auto 0 auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; font-size: 1em; line-height: 1em; color: #fff; text-decoration: none; padding: 14px 0; text-align: right; transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { color: #FDBA9F; transition: all 0.3s ease-in; }
+
+/* Botón Wp */
+aside#boton-wp { width: 50px; height: 50px; margin: 0; float: none; position: fixed; bottom: 30px; right: 30px; z-index: 99996; }
+aside#boton-wp a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; background: #2acc3e; font-size: 1.55em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 50%; box-shadow: 0 0 15px rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+aside#boton-wp a:hover { color: #2acc3e; background: #333; transition: all 0.3s ease-in; }
+
+/* Header */
+header {
+    width: 100%;
+    height: 90px;
+    box-shadow: 0px 10px 9px 0px #0000007a;
+    position: fixed;
+    z-index: 99997;
+    background: #ffffffe0;
+    top: 0;
+}
+header article {
+    width: 100%;
+    height: 90px;
+}
+header article figure {
+    width: 160px;
+    height: 90px;
+    float: none;
+    margin: 0 auto;
+}
+header article figure a {
+    width: 90px;
+    height: 80px;
+    padding: 5px 0;
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+header article figure a img {
+    width: 100%;
+    height: auto;
+}
+
+/* Caja Main */
+main { width: 100%; height: auto; margin: 90px auto 0; float: none; position: relative; }
+
+/* Sección Banner con Slides */
+main section#zona-slider { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; background: #fff; padding-bottom: 50px; }
+main section#zona-slider article.slick-slider { width: 100%; height: 88vh; margin: 0 auto; float: none; position: relative; }
+
+main section#zona-slider article.slick-slider figure { width: 100%; height: 88vh; margin: 0; float: left; position: relative; }
+main section#zona-slider article.slick-slider figure#slide-01 { background: url('../img/enterizos/enterizo-banner.jpeg') no-repeat center center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-02 { background: url('../img/bikers/biker-banner.jpeg') no-repeat center center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-03 { background: url('../img/leggins/leggin-banner.jpeg') no-repeat center center; background-size: cover; }
+
+main section#zona-slider article.slick-slider figure h3 { 
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: -1px 6px 7px #080808f2;
+    margin: 265px 0 0 0;
+ }
+main section#zona-slider article.slick-slider figure a { width: 50px;
+    text-decoration: none;
+    color: #fff;
+    background: #FDBA9F;
+    padding: 20px 60px;
+    border-radius: 30px;
+    font-size: 1em;
+    margin: 20px auto;
+    float: none;
+    display: block;
+    box-shadow: 0px 0px 16px 2px #252525eb;
+    transition: all 0.3s ease-in;
+ }
+main section#zona-slider article.slick-slider figure a:hover { color: #fff; background: #474747; transition: all 0.3s ease-in; }
+
+.slick-prev { left: 30px !important; z-index: 998; }
+.slick-next { right: 30px !important; z-index: 999; }
+
+.slick-dots { bottom: 30px !important; }
+
+/* Cabecera Productos */
+section#cabecera-enterizo {
+    width: 100%;
+    height: 150px;
+    float: none;
+    position: relative;
+    margin: 0 auto 85px;
+    background: url('../img/enterizos/enterizo-banner.jpeg')no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+section#cabecera-enterizo h1 {
+    padding: 34px 0;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: -1px 6px 7px #080808f2;
+}
+section#cabecera-biker {
+    width: 100%;
+    height: 150px;
+    float: none;
+    position: relative;
+    margin: 0 auto 85px;
+    background: url('../img/bikers/biker-banner.jpeg')no-repeat bottom center;
+    background-size: cover;
+    text-align: center;
+}
+section#cabecera-biker h1 {
+    padding: 34px 0;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: -1px 6px 7px #080808f2;
+}
+section#cabecera-leggin {
+    width: 100%;
+    height: 150px;
+    float: none;
+    position: relative;
+    margin: 0 auto 85px;
+    background: url('../img/leggins/leggin-banner.jpeg')no-repeat bottom center;
+    background-size: cover;
+    text-align: center;
+}
+section#cabecera-leggin h1 {
+    padding: 34px 0;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: -1px 6px 7px #080808f2;
+}
+
+/* Bloque Productos */
+main section.bloque-productos { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative; }
+main section.bloque-productos article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.nombre-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.precio-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a img { width: 524px; height: 286px; object-fit: cover; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.nombre-producto { color: #000; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.precio-producto { color: #333; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+
+
+/* Bloque Categorías */
+main section#bloque-categorias { width: 100%; height: auto; margin: 35px auto 75px; float: none; position: relative; }
+main section#bloque-categorias nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias nav a { width: 31%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a#img-enterizo { background: url('../img/enterizos/enterizo.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-bikers { background: url('../img/bikers/biker.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-leggin { background: url('../img/leggins/leggin.jpeg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: #999; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+
+/* Bloque Categorías en productos */
+main section#bloque-categorias-productos { width: 100%; height: auto; margin: 35px auto 75px; float: none; position: relative; }
+main section#bloque-categorias-productos nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias-productos nav a { width: 47%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias-productos nav a#categoria-1 { background: url('../img/enterizos/enterizo.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias-productos nav a#categoria-2 { background: url('../img/bikers/biker.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias-productos nav a#categoria-3 { background: url('../img/leggins/leggin.jpeg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias-productos nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#bloque-categorias-productos nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias-productos nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: #999; transition: all 0.3s ease-in; }
+main section#bloque-categorias-productos nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+/* Productos */
+main section#producto {
+    width: 80%;
+    height: 286px;
+    float: none;
+    position: relative;
+    margin: 0 auto 85px;
+}
+main section#producto figure {
+    width: 40%;
+    height: 286px;
+    float: left;
+    position: relative;
+}
+main section#producto figure img {
+    width: 100%;
+    height: 286px;
+    object-fit: cover;
+    float: none;
+    position: absolute;
+}
+main section#producto article {
+    width: 60%;
+    height: auto;
+    float: left;
+    position: relative;
+    text-align: justify;
+}
+main section#producto article h3 {
+    padding: 20px 0 10px 20px;
+}
+main section#producto article p {
+    padding: 0 0 10px 20px;
+}
+main section#producto article span {
+    padding: 0 0 10px 20px;
+}
+main section#producto article a {
+    display: block;
+    width: 70px;
+    padding: 10px 30px;
+    margin: 27px 0 0 20px;
+    background-color: #FDBA9F;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+main section#producto article a:hover { color: #fff; background: #474747; transition: all 0.3s ease-in; }
+
+/* Footer */
+footer { width: 100%; height: 200px; background: #fff}
+footer article { width: 100%; height: 200px; }
+footer article div { width: 250px; height: 200px; float: none; margin: 0 auto; }
+footer article div a { width: 165px; height: 140px; padding: 30px 0; display: block; float: none; margin: 0 auto; }
+footer article div a img { width: 100%; height: auto; }
+
+/* Zona de Media Queries */
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    main section.bloque-productos article { width: 80%; }
+    main section.bloque-productos article h3 { text-align: center; padding: 0 12px 10px 12px; }
+    main section.bloque-productos article nav a { width: 100%; height: 286px; margin: 0 auto 25px; display: block; overflow: hidden; }
+    main section.bloque-productos article nav a img { width: auto; height: 100%; }
+}
+
+@media only screen and (max-width: 999px){
+    
+}
+
+@media only screen and (max-width: 899px){
+    main section#bloque-categorias nav a { width: 96%; margin: 2% auto; display: block; }
+}
+
+@media only screen and (max-width: 699px){
+    
+}
+
+/* Móviles Grandes */
+@media only screen and (max-width: 499px){
+    main section.bloque-productos article { width: 90%; }
+}
+
+/* Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
